@@ -1,0 +1,114 @@
+INFO:     Started server process [33411]
+INFO:     Waiting for application startup.
+2026-10-19 11:50:37,596 INFO [app.main] WorkMate AI 0.1.0 started (ollama=http://localhost:11434, cloud=mock)
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:51681 - "GET /api/v1/health/live HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51690 - "GET /api/v1/health HTTP/1.1" 200 OK
+2026-10-19 11:50:45,923 WARNING [app.services.providers] Could not list Ollama models: All connection attempts failed
+INFO:     127.0.0.1:51690 - "GET /api/v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51705 - "GET /api/v1/health HTTP/1.1" 200 OK
+2026-10-19 11:51:00,095 WARNING [app.services.providers] Could not list Ollama models: All connection attempts failed
+INFO:     127.0.0.1:51705 - "GET /api/v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51705 - "OPTIONS /api/v1/chat/stream HTTP/1.1" 200 OK
+2026-10-19 11:51:01,577 INFO [app.routers.chat] request=c9dd3a512827434e8663eac9ae7e8d8a routed to cloud (gpt-4o-mini): Complex multi-step request: analyze, step by step, trade-offs
+INFO:     127.0.0.1:51705 - "POST /api/v1/chat/stream HTTP/1.1" 200 OK
+2026-10-19 11:51:04,346 INFO [app.services.router_service] request=c9dd3a512827434e8663eac9ae7e8d8a route=cloud model=gpt-4o-mini ttft_ms=351.5 latency_ms=2768.7 chars=601
+INFO:     127.0.0.1:51705 - "OPTIONS /api/v1/chat/stream HTTP/1.1" 200 OK
+2026-10-19 11:51:04,724 INFO [app.routers.chat] request=6e6d364f7dc84ccb95f2640cd6683d8a routed to local (llama3.2): Sensitive content detected: confidential, salary
+INFO:     127.0.0.1:51711 - "POST /api/v1/chat/stream HTTP/1.1" 200 OK
+2026-10-19 11:51:04,727 WARNING [app.services.router_service] request=6e6d364f7dc84ccb95f2640cd6683d8a provider=local model=llama3.2 failed (ollama_unreachable): Cannot reach Ollama at http://localhost:11434. Is the service running?
+INFO:     127.0.0.1:51716 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51721 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51732 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51736 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51740 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51746 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51758 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51764 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51769 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51778 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51782 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51789 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51794 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51800 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51807 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51811 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51817 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51824 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51830 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51838 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51869 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51888 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51895 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51903 - "OPTIONS /api/v1/chat/stream HTTP/1.1" 200 OK
+2026-10-19 12:07:03,641 INFO [app.routers.chat] request=7ec2085a9679471d821f374f135ff0ad routed to local (llama3.2): Sensitive content detected: confidential, salary
+INFO:     127.0.0.1:51903 - "POST /api/v1/chat/stream HTTP/1.1" 200 OK
+2026-10-19 12:07:03,644 WARNING [app.services.router_service] request=7ec2085a9679471d821f374f135ff0ad provider=local model=llama3.2 failed (ollama_unreachable): Cannot reach Ollama at http://localhost:11434. Is the service running?
+INFO:     127.0.0.1:51907 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51911 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51916 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51920 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51927 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51933 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51939 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51946 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51960 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51968 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51977 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51989 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51996 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52006 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52032 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52036 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52041 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52058 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52066 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52070 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52079 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52085 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52092 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52104 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52134 - "GET /api/v1/health HTTP/1.1" 200 OK
+2026-10-21 12:45:02,932 INFO [httpx] HTTP Request: GET http://localhost:11434/api/version "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60173 - "GET /api/v1/health HTTP/1.1" 200 OK
+2026-10-21 12:45:02,946 INFO [httpx] HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60176 - "GET /api/v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60379 - "GET /api/v1/health HTTP/1.1" 200 OK
+2026-10-21 12:51:20,887 WARNING [app.services.providers] Could not list Ollama models: All connection attempts failed
+INFO:     127.0.0.1:60382 - "GET /api/v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60382 - "GET /api/v1/health HTTP/1.1" 200 OK
+2026-10-21 12:51:21,314 WARNING [app.services.providers] Could not list Ollama models: All connection attempts failed
+INFO:     127.0.0.1:60382 - "GET /api/v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60382 - "GET /api/v1/health HTTP/1.1" 200 OK
+2026-10-21 12:51:21,532 WARNING [app.services.providers] Could not list Ollama models: All connection attempts failed
+INFO:     127.0.0.1:60382 - "GET /api/v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60382 - "GET /api/v1/health HTTP/1.1" 200 OK
+2026-10-21 12:51:21,694 WARNING [app.services.providers] Could not list Ollama models: All connection attempts failed
+INFO:     127.0.0.1:60382 - "GET /api/v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60406 - "GET /api/v1/health HTTP/1.1" 200 OK
+2026-10-21 12:51:30,027 WARNING [app.services.providers] Could not list Ollama models: All connection attempts failed
+INFO:     127.0.0.1:60406 - "GET /api/v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60406 - "GET /api/v1/health HTTP/1.1" 200 OK
+2026-10-21 12:51:30,611 WARNING [app.services.providers] Could not list Ollama models: All connection attempts failed
+INFO:     127.0.0.1:60406 - "GET /api/v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60406 - "GET /api/v1/health HTTP/1.1" 200 OK
+2026-10-21 12:51:30,769 WARNING [app.services.providers] Could not list Ollama models: All connection attempts failed
+INFO:     127.0.0.1:60406 - "GET /api/v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60406 - "GET /api/v1/health HTTP/1.1" 200 OK
+2026-10-21 12:51:30,914 WARNING [app.services.providers] Could not list Ollama models: All connection attempts failed
+INFO:     127.0.0.1:60406 - "GET /api/v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60406 - "GET /api/v1/health HTTP/1.1" 200 OK
+2026-10-21 12:51:31,113 WARNING [app.services.providers] Could not list Ollama models: All connection attempts failed
+INFO:     127.0.0.1:60406 - "GET /api/v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60406 - "GET /api/v1/health HTTP/1.1" 200 OK
+2026-10-21 12:51:31,328 WARNING [app.services.providers] Could not list Ollama models: All connection attempts failed
+INFO:     127.0.0.1:60406 - "GET /api/v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60406 - "GET /api/v1/health HTTP/1.1" 200 OK
+2026-10-21 12:51:31,525 WARNING [app.services.providers] Could not list Ollama models: All connection attempts failed
+INFO:     127.0.0.1:60406 - "GET /api/v1/models HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [33411]

@@ -1,0 +1,75 @@
+❯ Building...
+✔ Building...
+Initial chunk files | Names            | Raw size
+main.js             | main             | 38.58 kB | 
+chunk-BTREYS5P.js   | -                | 11.03 kB | 
+styles.css          | styles           |  9.15 kB | 
+chunk-42UHFT4D.js   | -                |  3.83 kB | 
+
+                    | Initial total    | 62.58 kB
+
+Lazy chunk files    | Names            | Raw size
+chunk-Q2PORY6L.js   | chat-component   | 40.37 kB | 
+chunk-OFLYZXAS.js   | system-component | 18.54 kB | 
+
+Application bundle generation complete. [1.532 seconds] - 2026-10-19T06:20:40.364Z
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.018 seconds] - 2026-10-21T07:10:26.492Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.006 seconds] - 2026-10-21T07:10:42.954Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.006 seconds] - 2026-10-21T07:10:54.576Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.005 seconds] - 2026-10-21T07:17:34.175Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.006 seconds] - 2026-10-21T07:19:45.922Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names            | Raw size
+main.js             | main             | 38.58 kB | 
+chunk-BTREYS5P.js   | -                | 11.03 kB | 
+styles.css          | styles           |  9.15 kB | 
+chunk-42UHFT4D.js   | -                |  3.83 kB | 
+
+                    | Initial total    | 62.58 kB
+
+Lazy chunk files    | Names            | Raw size
+chunk-Q2PORY6L.js   | chat-component   | 40.37 kB | 
+chunk-OFLYZXAS.js   | system-component | 18.54 kB | 
+
+Application bundle generation complete. [0.011 seconds] - 2026-10-21T07:20:06.958Z
+
